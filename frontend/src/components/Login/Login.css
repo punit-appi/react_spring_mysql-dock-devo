@@ -1,0 +1,107 @@
+/* Center the form */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Form Title */
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px; /* Larger font size for the title */
+  color: #333;
+  font-weight: 600; /* Slightly bolder title */
+  text-transform: uppercase; /* To make the title look more sleek */
+  letter-spacing: 1px; /* Add spacing between letters for a refined look */
+}
+
+/* Form Styling */
+.login-form {
+  width: 100%;
+  max-width: 450px; /* Slightly wider for more space */
+  background: #fff;
+  padding: 50px;
+  border-radius: 50px; /* Round corners more for a softer look */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for form container */
+.login-form:hover {
+  transform: scale(1.02); /* Slightly enlarge the form on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Input field styling */
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px; /* Slightly larger border radius for input fields */
+  outline: none;
+  transition: all 0.3s ease-in-out; /* Smooth transition for border change */
+  background-color: #f9f9f9; /* Light background for input fields */
+}
+
+/* Focus effect for input fields */
+.form-group input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  background-color: #eaf4ff; /* Light blue background on focus */
+}
+
+/* Button Styling */
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff; /* Blue button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background change and transform effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow to make the button pop */
+}
+
+/* Button hover effect */
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slightly raise the button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 20px;
+  }
+
+  .form-group input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .submit-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}

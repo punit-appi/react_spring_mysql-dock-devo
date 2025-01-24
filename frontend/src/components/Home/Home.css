@@ -1,0 +1,127 @@
+/* Center the content */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Title */
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 1rem;
+}
+
+/* Photo gallery styling */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Individual photo card */
+.photo-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for photo cards */
+.photo-card:hover {
+    transform: scale(1.05);
+}
+
+/* Photo image styling */
+.photo-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Photo details container */
+.photo-details {
+    padding: 10px;
+}
+
+/* Photo title styling */
+.photo-title {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+/* Photo location styling */
+.photo-location {
+    font-size: 14px;
+    color: #888;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .photo-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Styling for the logo container */
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px; /* Add space below the logo */
+    padding: 20px; /* Add padding around the logo for breathing room */
+    background-color: #f0f0f0; /* Light background for contrast */
+    border-radius: 15px; /* Round the corners of the container */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow around the logo container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effect */
+  }
+  
+  /* Styling for the Sak logo */
+  .sak-logo {
+    width: 100%;  /* Make the logo fill the available width */
+    max-width: 600px; /* Set a max-width to prevent the logo from becoming too wide */
+    height: auto;  /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+    border-radius: 10px; /* Round the corners of the logo */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Shadow around the logo for a floating effect */
+  }
+  
+  /* Add a hover effect for the logo container */
+  .logo-container:hover {
+    transform: scale(1.05); /* Slightly enlarge the logo container on hover */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Optional: Add a hover effect for the logo itself */
+  .sak-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  }
+  
+  
